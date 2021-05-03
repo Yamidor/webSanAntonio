@@ -1,0 +1,31 @@
+a {
+  color: rgb(22, 21, 22);
+  text-decoration: none;
+}
+
+.li:hover > a {
+  color: rgb(255, 255, 255);
+}
+
+li {
+  display: inline-grid;
+  border-radius: 5%;
+  margin: 1%;
+  padding: 5px;
+}
+.li:hover {
+  background: #7a7474;
+  border: 1px solid black;
+  -webkit-transform: perspective(100px) rotateY(5deg);
+  transform: perspective(100px) rotateY(5deg);
+}
+@media (min-width: 600px) {
+  .li {
+    display: inline-grid;
+  }
+}
+@media (min-width: 900px) {
+  .li {
+    display: grid;
+  }
+}
