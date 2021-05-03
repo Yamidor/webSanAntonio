@@ -2,7 +2,8 @@ import React from 'react';
 const Mission = () => {
     return(
         <div className="container">
-            <h1>Mision 1</h1>
+            <h1>Mision</h1>
+            <p>eta es la Mision</p>
         </div>
     )
 
