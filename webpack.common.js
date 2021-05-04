@@ -7,12 +7,15 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 module.exports = {
   entry: './src/index.js',
   output: {
-    path: path.resolve(__dirname, '../dist'),
+    path: path.resolve(__dirname, 'dist'),
     filename: '[name].[contenthash].js',
     publicPath: '/'
   },
   resolve: {
     extensions: ['.js', '.jsx']
+  },
+  watchOptions:{
+    ignored: /node_modules/
   },
   module: {
     rules: [

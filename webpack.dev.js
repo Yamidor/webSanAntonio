@@ -9,7 +9,7 @@ const devConfig = {
  devServer: {
    historyApiFallback: true,
    port: 3000,
-   contentBase: '../dist',
+   contentBase: 'dist',
    open: 'chrome',
    hot: true
  },
