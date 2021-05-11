@@ -21,6 +21,11 @@ const Navbar = (props) =>{
                         <b>Misión</b> 
                     </Link>
                 </li>
+                <li className="li">
+                    <Link  to="/teachers">
+                        <b>Docentes</b> 
+                    </Link>
+                </li>
             </ul>
             
             

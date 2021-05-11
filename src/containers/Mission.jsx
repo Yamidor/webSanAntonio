@@ -6,6 +6,5 @@ const Mission = () => {
             <p>Esta es la Mision</p>
         </div>
     )
-
 }
 export default Mission;

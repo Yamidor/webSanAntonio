@@ -4,6 +4,7 @@ import Home from '../containers/Home';
 import Student from '../containers/Student';
 import View from '../containers/View';
 import Mission from '../containers/Mission';
+import Teachers from '../containers/Teachers';
 import StudentCreate from '../containers/StudentCreate';
 
 const App = () => {
@@ -15,6 +16,7 @@ const App = () => {
                     <Route exact path="/view" component={View} /> 
                     <Route exact path="/mission" component={Mission} /> 
                     <Route exact path="/students" component={Student} />
+                    <Route exact path="/teachers" component={Teachers} />
                     <Route exact path="/student/create" component={StudentCreate} />        
                 </Switch>
             </Layout>
