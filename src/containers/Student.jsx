@@ -9,7 +9,7 @@ const Student = () => {
     },[status]);
 
     const cargarStudents = async () =>{
-        let est = await fetch("http://localhost:8080/students?currentPage=0&sizePage=100");
+        let est = await fetch("https://colegio-san-antonio.herokuapp.com/students?currentPage=0&sizePage=100");
         const res = await est.json();
         setStudents(res.content);
         setStatus(true)
