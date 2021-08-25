@@ -1,7 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faEnvelopeSquare, faPhone, faMapMarkerAlt, faAddressCard} from '@fortawesome/free-solid-svg-icons'
-import StudentService from '../services/student-service';
 import Teacher from '../img/avatar.jpg';
 import '../styles/students.css';
 

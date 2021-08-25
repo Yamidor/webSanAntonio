@@ -1,7 +1,6 @@
 import React from 'react';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import {faEnvelopeSquare, faPhone, faMapMarkerAlt, faAddressCard} from '@fortawesome/free-solid-svg-icons';
-import Teacher from '../img/avatar.jpg'
+import {faAddressCard} from '@fortawesome/free-solid-svg-icons';
 import Silvio from '../img/silvio.jpeg'
 import Yamid from '../img/yamid.jpeg'
 import Olguer from '../img/olguer.jpeg'

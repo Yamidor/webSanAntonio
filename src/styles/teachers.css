@@ -29,3 +29,13 @@
   width: 100%;
   height: 250px;
 }
+@media (max-width: 600px) {
+  .container-teachers {
+    display: grid;
+  }
+  .card-container-teachers {
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 10px;
+  }
+}
