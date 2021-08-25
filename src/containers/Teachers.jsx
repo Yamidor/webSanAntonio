@@ -1,4 +1,6 @@
 import React from 'react';
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import {faEnvelopeSquare, faPhone, faMapMarkerAlt, faAddressCard} from '@fortawesome/free-solid-svg-icons';
 import Teacher from '../img/avatar.jpg'
 import Silvio from '../img/silvio.jpeg'
 import Yamid from '../img/yamid.jpeg'
@@ -37,39 +39,25 @@ const Teachers = () => {
                     ]
     console.log(teachers);
     return(
-        <div className="container">
-            <h1 className="title-teacher">Docentes</h1>
-            <div className="container-teachers">
-                {teachers.map(teacher =>
-                <div className="teacher">
-                    <a href="#miModal2">
-                        <img src={teacher.img} alt={teacher.img} className="img-teacher"/>
-                    </a>
-                    <div id="miModal2" className="modal">
-                        <div className="modal-contenido">
-                            <a href="#" className="close">X</a>
-                            <h2 className="name-teacher">{teacher.name}</h2>
-                            <div className="container-teachers-info">
-                            <img src={Yamid} alt="Teacher" className="img-teacher-modal"/>
-                                <div className="title-items">
-                                    <h4 className="title-item">CARGO:</h4>
-                                    <h4 className="title-item">TITULO(S):</h4>
-                                    <h4 className="title-item">ASIGNATURAS:</h4>
-                                    <h4 className="title-item">GRADOS:</h4>
-                                </div>
-                                <div className="description-items">
-                                    <p className="description-item">{teacher.cargo}</p>
-                                    <p className="description-item">{teacher.titles}</p>
-                                    <p className="description-item">{teacher.materias}</p>
-                                    <p className="description-item">{teacher.grados}</p>
-                                </div>
-
-                            </div>
-                        </div>  
+        <div className="container-teachers">
+            <h1 className="title-teachers" >Docentes</h1>
+            {teachers.map(teacher =>
+                <div className="card-container-teachers" key={teacher.id}>
+                    <div className="card-title" >
+                        <h4>{teacher.name}</h4>
+                    </div>
+                    <div className="card-content-teachers">
+                        <img src={teacher.img} alt={teacher.img} className="img-teachers"/>
+                    </div>
+                    <div className="card-footer-teachers" >
+                        <h5><FontAwesomeIcon icon={faAddressCard} color="green"/> {teacher.titles}</h5>
+                        <h5> {teacher.cargo}</h5>
+                        <h5> {teacher.email}</h5>
+                        <h5> {teacher.materias}</h5>
+                        <h5> {teacher.grados}</h5>
                     </div>
                 </div>
-                )}
-            </div>
+            )}
         </div>
     )
 
