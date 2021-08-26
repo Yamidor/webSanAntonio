@@ -9,6 +9,9 @@ import Ricardo from '../img/ricardo.jpeg'
 import Yasmin from '../img/yasmin.jpeg'
 import Livio from '../img/livio.jpeg'
 import Edmundo from '../img/edmundo.jpeg'
+import Ocana from '../img/ocaña.jpg'
+import Adriana from '../img/adriana.jpeg'
+import Geovany from '../img/geovany.jpeg'
 import '../styles/teachers.css'
 const Teachers = () => {
     const teachers = [
@@ -63,7 +66,7 @@ const Teachers = () => {
                             titles: "Licenciado en prescolar basica primaria e ingles",
                             cargo: "Docente",
                             img: Yasmin,
-                            materias: "Ingeles-Catellano(7°)",
+                            materias: "Ingeles-Catellano",
                             grados: "6° 7° 8° 9° 10° 11°"
                         },
                         {
@@ -72,18 +75,45 @@ const Teachers = () => {
                             titles: "Licenciado en contaduria publica",
                             cargo: "Docente",
                             img: Livio,
-                            materias: "Castellano(6°)-Matematicas(6° 7°)-Estadistica(6°-11°)-Geometrica(8° 9°)-Competencias(6° 7°)",
+                            materias: "Castellano-Matematicas-Estadistica-Geometrica-Competencias",
                             grados: "6° 7° 8° 9° 10° 11°"
                         },
                         {
                             id: 8, 
                             name: "JESUS EDMUNDO GONZALES GUALGUAN",
-                            titles: "Licenciado en SOCIALES",
+                            titles: "Licenciado en Sociales",
                             cargo: "Docente",
                             img: Edmundo,
-                            materias: "Sociales-Religion(11°)",
+                            materias: "Sociales-Religion",
                             grados: "6° 7° 8° 9° 10° 11°"
                         },
+                        {
+                            id: 9, 
+                            name: "JORGE ERNESTO OCAÑA MONCAYO",
+                            titles: "Licenciado en artes plasticas",
+                            cargo: "Docente",
+                            img: Ocana,
+                            materias: "Artistica-Educacion Fisica",
+                            grados: "6° 7° 8° 9° 10° 11°"
+                        },
+                        {
+                            id: 10, 
+                            name: "ADRIANA PATRICIA CASTRO DELGADO",
+                            titles: "Licenciado en biologia",
+                            cargo: "Docente",
+                            img: Adriana,
+                            materias: "Biologia-Quimica",
+                            grados: "6° 7° 8° 9° 10° 11°"
+                        },
+                        {
+                            id: 11, 
+                            name: "YOBANY ADJEMIRO BURBANO LOPEZ",
+                            titles: "Licenciado en educacion básica con énfasis en ciencias naturales y educación ambiental",
+                            cargo: "Docente",
+                            img: Geovany,
+                            materias: "Primaria",
+                            grados: "0° 1° 2° 3° 4° 15°"
+                        }
 
                     ]
     console.log(teachers);
